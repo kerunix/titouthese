@@ -10,7 +10,6 @@ onMounted(() => {
 
     graph(graphWrapper.value).graphData(data)
   }
-
 })
 </script>
 

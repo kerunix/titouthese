@@ -154,7 +154,18 @@ const GRAPH_DATA = [
   { id:133, cellParent:	134, cellTitle: "Lou", },
   { id:134, cellParent:	15, cellTitle: "Extra", },
   { id:135, cellParent:	47, cellTitle: "La Goute", },
-  { id:136, cellParent:	14, cellTitle: "Extra", }
+  { id:136, cellParent:	14, cellTitle: "Extra", },
+  { id:137, cellParent: 134, cellTitle: "Emiliano", },
+  { id:138, cellParent: 14, cellTitle: "Camille Bonhomme", },
+  { id:139, cellParent: 147, cellTitle: "StackOverflow", },
+  { id:140, cellParent: 147, cellTitle: "StackExchange", },
+  { id:141, cellParent: 147, cellTitle: "CrossValidated", },
+  { id:142, cellParent: 136, cellTitle: "Micha", }, 
+  { id:143, cellParent: 136, cellTitle: "HIIT", }, 
+  { id:144, cellParent: 136, cellTitle: "Faya Patrice", },
+  { id:145, cellParent: 12, cellTitle: "Benoit Burban", },
+  { id:146, cellParent: 12, cellTitle: "Jean-Yves Goret", },
+  { id:147, cellParent: 3, cellTitle: "Unknown contributors"}
 ] as const
 
 export const calculateNodeValue = (node: GraphNode): number => 100 / (node.cellParent || .3) * 6

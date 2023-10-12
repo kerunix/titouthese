@@ -165,7 +165,12 @@ const GRAPH_DATA = [
   { id:144, cellParent: 136, cellTitle: "Faya Patrice", },
   { id:145, cellParent: 12, cellTitle: "Benoit Burban", },
   { id:146, cellParent: 12, cellTitle: "Jean-Yves Goret", },
-  { id:147, cellParent: 3, cellTitle: "Unknown contributors"}
+  { id:147, cellParent: 3, cellTitle: "Unknown contributors"},
+  { id:148, cellParent: 3, cellTitle: "Les membres de mon comité de thèse"},
+  { id:149, cellParent: 148, cellTitle: "Jean-François Carrias"},
+  { id:150, cellParent: 148, cellTitle: "Frédéric Delsuc"},
+  { id:151, cellParent: 148, cellTitle: "Laurence Gaume-Vial"},
+  { id:152, cellParent: 148, cellTitle: "Heidy Schimann"},
 ] as const
 
 export const calculateNodeValue = (node: GraphNode): number => 100 / (node.cellParent || .3) * 6
